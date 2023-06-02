@@ -53,8 +53,11 @@ function getUserCoordinates() {
     } else {
       polyline.setLatLngs(coordinates);
     }
+
+    adjustMapView(); // Update the map view to fit all the recorded points
   });
 }
+
 
 function showCoordinatesTable() {
   var table = document.getElementById("coordinatesTable");
